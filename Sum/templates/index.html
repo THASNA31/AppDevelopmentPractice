@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <h1>Sum Calculator</h1>
+    <form action="/" method="POST">
+        <label for="number1">Enter the first number:</label>
+        <input type="number" id="number1" name="number1" required>
+        <br>
+        <label for="number2">Enter the second number:</label>
+        <input type="number" id="number2" name="number2" required>
+        <br>
+        <input type="submit" value="Calculate Sum">
+    </form>
+    
+    <!-- Display the result in a form field -->
+    <form>
+        <label for="result">Sum:</label>
+        <input type="text" id="result" name="result" readonly value="{{ result }}">
+    </form>
+</body>
+</html>
